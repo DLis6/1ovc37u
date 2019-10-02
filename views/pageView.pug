@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1 Analytics
+    table
+        thead
+            tr
+                th Path
+                th Visits
+        tbody
+            each valor in data
+                tr
+                    td= valor._id.path
+                    td= valor.count
+                   
+
+ 
